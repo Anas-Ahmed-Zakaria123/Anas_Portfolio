@@ -1,0 +1,195 @@
+/* Custom styles to echo the clean portfolio vibe */
+:root{
+  --accent: #b51e2e; /* deep red accent close to tie color */
+}
+*{ font-family: 'Poppins', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+
+.navbar-brand{ letter-spacing: 0.5px; }
+
+.hero{
+  min-height: 95vh;
+  padding-top: 96px;
+  background: linear-gradient(135deg, #111 0%, #1b1b1b 60%, #222 100%);
+}
+.text-accent{ color: var(--accent) !important; }
+.btn-accent{
+  background: var(--accent);
+  color: #fff;
+  border: none;
+}
+.btn-outline-accent{
+  border: 1px solid var(--accent);
+  color: var(--accent);
+}
+.btn-outline-accent:hover{
+  background: var(--accent);
+  color: #fff;
+}
+
+.hero-photo img{
+  max-height: 420px;
+  object-fit: cover;
+}
+
+.section-padding{ padding: 80px 0; }
+.section-title{
+  margin-bottom: 28px;
+}
+.title-underline{
+  width: 64px;
+  height: 4px;
+  background: var(--accent);
+  border-radius: 999px;
+  margin-top: 8px;
+}
+
+.skill-card{
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 14px;
+  padding: 14px 16px;
+  text-align: center;
+  font-weight: 600;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+}
+
+.project-card .card-title{
+  font-weight: 700;
+}
+.project-card p{ margin-bottom: 10px; }
+
+.contact-card{
+  background: #fff;
+  border-radius: 16px;
+  border: 1px solid #eee;
+}
+
+/* Smooth scrolling */
+html{
+  scroll-behavior: smooth;
+}
+
+
+.nav-item a {
+  transition: 0.5s linear !important;
+}
+
+.nav-item:hover a {
+  color: #b51e2e !important;
+}
+
+
+.hero .btn-accent,
+.hero .btn-outline-light,
+.hero .btn-success {
+    transition: 0.5s linear !important;
+    border: none !important;
+    outline: none !important;
+
+}
+
+.hero .btn-accent:hover,
+.hero .btn-outline-light:hover{
+  background-color: white;
+  outline: none;
+  border: none;
+}
+
+.hero .btn-success:hover  {
+  background-color: white;
+  color: #111;
+  outline: none;
+  border: none;
+}
+
+#projects .showVideo {
+  transition: 0.5s linear !important;
+  color: #111 !important;
+  border-color: #111 !important;
+}
+
+#projects .showRepo {
+  transition: 0.5s linear !important;
+  color: blue !important;
+  border-color: blue !important;
+}
+
+#projects .showDashboard {
+  transition: 0.5s linear !important;
+  color: crimson !important;
+  border-color: crimson !important;
+}
+
+#projects .showVideo:hover {
+  background-color: #1b1b1b !important;
+  color:  white !important;
+  border: none !important;
+  outline: none !important;
+}
+
+
+#projects .showRepo:hover {
+  background-color: blue !important;
+  color:  white !important;
+  border: none !important;
+  outline: none !important;
+}
+
+#projects .showDashboard:hover {
+  background-color: crimson !important;
+  color:  white !important;
+  border: none !important;
+  outline: none !important;
+}
+
+.skill-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  min-height: 120px;
+  text-align: center;
+}
+
+/* أيقونة */
+.skill-card i {
+  font-size: 1.6rem;
+  background: #e9ecef;
+  color: #0d6efd;
+  border-radius: 50%;
+  padding: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+}
+
+/* النصوص */
+.skill-card strong {
+  display: block;
+  margin-top: 10px;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.skill-card p {
+  margin-top: 5px;
+  font-size: 0.85rem;
+  color: #6c757d;
+}
+
+.skill-card:hover {
+  transform: translateY(-6px); /* يطلع لفوق شوية */
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15); /* ظل أكبر */
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef); /* تغيير الخلفية */
+}
+
+.skill-card:hover i {
+  background: #0d6efd; /* تتلون بالأزرق */
+  color: #fff;        /* الأيقونة تبقى بيضا */
+  transform: scale(1.15) rotate(8deg); /* تكبر وتلف شوية */
+}
+
+/* Hover Effect على الكار*
