@@ -120,6 +120,12 @@ html{
   border-color: crimson !important;
 }
 
+#projects .showLinked {
+  transition: 0.5s linear !important;
+  color: teal !important;
+  border-color: teal !important;
+}
+
 #projects .showVideo:hover {
   background-color: #1b1b1b !important;
   color:  white !important;
@@ -137,6 +143,13 @@ html{
 
 #projects .showDashboard:hover {
   background-color: crimson !important;
+  color:  white !important;
+  border: none !important;
+  outline: none !important;
+}
+
+#projects .showLinked:hover {
+  background-color: teal !important;
   color:  white !important;
   border: none !important;
   outline: none !important;
