@@ -31,6 +31,22 @@
   object-fit: cover;
 }
 
+#about , #education , #skills {
+background-color: #1b1b1b !important;
+color: #0d6efd;
+}
+
+
+#about h2 , #education h2 , #skills h2 {
+color: #0d6efd !important;
+}
+
+
+
+#about , #education , #skills p {
+color: white !important;
+}
+
 .section-padding{ padding: 80px 0; }
 .section-title{
   margin-bottom: 28px;
@@ -64,6 +80,7 @@
   border: 1px solid #eee;
 }
 
+
 /* Smooth scrolling */
 html{
   scroll-behavior: smooth;
@@ -81,31 +98,63 @@ html{
 
 .hero .btn-accent,
 .hero .btn-outline-light,
-.hero .btn-success {
+.hero .btn-warning,
+.btn-danger {
     transition: 0.5s linear !important;
     border: none !important;
     outline: none !important;
-
 }
+
 
 .hero .btn-accent:hover,
 .hero .btn-outline-light:hover{
   background-color: white;
   outline: none;
   border: none;
+  color: rgb(67, 191, 239);
 }
 
-.hero .btn-success:hover  {
+.hero .btn-warning:hover  {
   background-color: white;
-  color: #111;
+  color: gold;
   outline: none;
   border: none;
 }
 
+.hero .btn-danger:hover {
+  background-color: white !important;
+  color: #b51e2e;
+}
+
+#projects {
+background-color: #1b1b1b !important;
+color: #0d6efd !important;
+}
+
+#projects .card {
+  background-color: #111 !important;
+}
+
+#projects .card .card-title {
+  color: #0d6efd !important;
+}
+
+#projects .card .card-text {
+  color: white !important;
+}
+
+/*
 #projects .showVideo {
   transition: 0.5s linear !important;
   color: #111 !important;
   border-color: #111 !important;
+}
+*/
+
+#projects .showVideo {
+  transition: 0.5s linear !important;
+  color: darkgray !important;
+  border-color: darkgrey !important;
 }
 
 #projects .showRepo {
@@ -126,8 +175,17 @@ html{
   border-color: teal !important;
 }
 
+/*
 #projects .showVideo:hover {
   background-color: #1b1b1b !important;
+  color:  white !important;
+  border: none !important;
+  outline: none !important;
+}*/
+
+
+#projects .showVideo:hover {
+  background-color: darkgray !important;
   color:  white !important;
   border: none !important;
   outline: none !important;
@@ -155,6 +213,7 @@ html{
   outline: none !important;
 }
 
+/*
 .skill-card {
   background: #fff;
   border-radius: 12px;
@@ -164,9 +223,20 @@ html{
   cursor: pointer;
   min-height: 120px;
   text-align: center;
+}*/
+
+.skill-card {
+  background: #111;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  min-height: 120px;
+  text-align: center;
 }
 
-/* أيقونة */
+/* أيقونة 
 .skill-card i {
   font-size: 1.6rem;
   background: #e9ecef;
@@ -178,34 +248,132 @@ html{
   justify-content: center;
   transition: all 0.3s ease-in-out;
 }
+*/
+.skill-card i {
+  font-size: 1.6rem;
+  background: #333;
+  color: #0d6efd;
+  border-radius: 50%;
+  padding: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+}
 
-/* النصوص */
+/* النصوص 
 .skill-card strong {
   display: block;
   margin-top: 10px;
   font-size: 1.1rem;
   color: #333;
+}*/
+
+.skill-card strong {
+  display: block;
+  margin-top: 10px;
+  font-size: 1.1rem;
+  color: #0d6efd;
 }
+
+/*.skill-card p {
+  margin-top: 5px;
+  font-size: 0.85rem;
+  color: #6c757d;
+}*/
+
 
 .skill-card p {
   margin-top: 5px;
   font-size: 0.85rem;
-  color: #6c757d;
+  color: gold !important;
+  font-weight: 100 !important;
 }
+
+/*
+.skill-card:hover {
+  transform: translateY(-6px); 
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15); 
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef); 
+}*/
+
 
 .skill-card:hover {
   transform: translateY(-6px); /* يطلع لفوق شوية */
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15); /* ظل أكبر */
-  background: linear-gradient(135deg, #f8f9fa, #e9ecef); /* تغيير الخلفية */
+  background: linear-gradient(135deg, #1b1b1b, #333); /* تغيير الخلفية */
 }
 
+
+/*
 .skill-card:hover i {
-  background: #0d6efd; /* تتلون بالأزرق */
-  color: #fff;        /* الأيقونة تبقى بيضا */
-  transform: scale(1.15) rotate(8deg); /* تكبر وتلف شوية */
+  background: #0d6efd; 
+  color: #fff;        
+  transform: scale(1.15) rotate(8deg); 
 }
+*/
+
+.skill-card:hover i {
+  background: #0d6efd; 
+  color: #333;        
+  transform: scale(1.15) rotate(8deg); 
+}
+
 
 .img-fluid {
   border: 3px solid rgb(0, 255, 191) !important;
 }
-/* Hover Effect على الكار*
+
+#certs .list-group a {
+  transition: 0.5s linear;
+}
+
+#certs .list-group a:hover {
+  color: #0d6efd;
+}
+
+#skills ul li {
+  background-color: #111 !important;
+  color: white !important;
+}
+
+#skills ul li i {
+  color: #b51e2e !important;
+}
+
+#certs {
+  background-color: #1b1b1b;
+}
+
+#certs h2 {
+  color: #0d6efd !important;
+}
+
+#certs .list-group a{
+  background-color: #111 !important;
+  color: white !important;
+  transition: 0.5s linear !important;
+}
+
+
+#certs .list-group a:hover {
+  color: #0d6efd !important;
+}
+
+
+#certs .list-group a i {
+  color: #b51e2e !important;
+}
+
+#contact {
+  background-color: #1b1b1b !important;
+}
+
+#contact h2 {
+  color: #0d6efd !important;
+}
+
+#contact .contact-card {
+  background-color: #111 !important;
+  color: white !important;
+}
