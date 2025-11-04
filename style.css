@@ -2,7 +2,14 @@
 :root{
   --accent: #b51e2e; /* deep red accent close to tie color */
 }
-*{ font-family: 'Poppins', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+*{ 
+font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
 
 .navbar-brand{ letter-spacing: 0.5px; }
 
@@ -139,9 +146,15 @@ color: #0d6efd !important;
   color: #0d6efd !important;
 }
 
-#projects .card .card-text {
+#projects .card p.text-muted {
+  color: gold !important;
+}
+
+
+#projects .card p {
   color: white !important;
 }
+
 
 /*
 #projects .showVideo {
@@ -236,7 +249,7 @@ color: #0d6efd !important;
   text-align: center;
 }
 
-/* أيقونة 
+/* 
 .skill-card i {
   font-size: 1.6rem;
   background: #e9ecef;
@@ -261,7 +274,7 @@ color: #0d6efd !important;
   transition: all 0.3s ease-in-out;
 }
 
-/* النصوص 
+/* 
 .skill-card strong {
   display: block;
   margin-top: 10px;
@@ -299,9 +312,9 @@ color: #0d6efd !important;
 
 
 .skill-card:hover {
-  transform: translateY(-6px); /* يطلع لفوق شوية */
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15); /* ظل أكبر */
-  background: linear-gradient(135deg, #1b1b1b, #333); /* تغيير الخلفية */
+  transform: translateY(-6px); 
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15); 
+  background: linear-gradient(135deg, #1b1b1b, #333);
 }
 
 
