@@ -55,22 +55,22 @@
         </button>
         <div class="collapse navbar-collapse" id="navMenu">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-bold">
-            <li class="nav-item me-2">
+            <li class="nav-item me-2 fw-bold">
               <a class="nav-link" href="#about">About</a>
             </li>
-            <li class="nav-item me-2">
+            <li class="nav-item me-2 fw-bold">
               <a class="nav-link" href="#education">Education</a>
             </li>
-            <li class="nav-item me-2">
+            <li class="nav-item me-2 fw-bold">
               <a class="nav-link" href="#skills">Skills</a>
             </li>
-            <li class="nav-item me-2">
+            <li class="nav-item me-2 fw-bold">
               <a class="nav-link" href="#projects">Projects</a>
             </li>
-            <li class="nav-item me-2">
+            <li class="nav-item me-2 fw-bold">
               <a class="nav-link" href="#certs">Certifications</a>
             </li>
-            <li class="nav-item me-2">
+            <li class="nav-item me-2 fw-bold">
               <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
@@ -136,12 +136,19 @@
               Junior Data Analyst
             </span>
             <h1 class="display-5 fw-bold">
-              Hi, I'm <span class="text-accent">Anas Ahmed</span>
+              Hi, I'm
+              <span style="color: red" class="text-accen fw-bold"
+                >Anas Ahmed</span
+              >
             </h1>
-            <p class="lead text-white-50 mt-3">
-              Passionate about uncovering insights from data using <b>SQL</b>,
-              <b>Python</b>, and <b>Power BI</b> to drive smart business
-              decisions.
+            <p class="lead text-white mt-3">
+              Passionate Data Analyst with strong expertise in SQL, Python, and
+              Power BI, specializing in data cleaning, data modeling, and
+              visualization to transform complex datasets into clear, actionable
+              insights. Driven by a commitment to data-driven decision making, I
+              focus on uncovering patterns, trends, and opportunities that help
+              organizations improve performance, optimize processes, and support
+              strategic business goals.
             </p>
             <div class="d-flex flex-wrap gap-3 mt-4">
               <a href="#projects" class="btn btn-accent btn-lg">
@@ -164,9 +171,9 @@
           <div class="col-lg-5 text-center order-1 order-lg-2">
             <div class="hero-photo mx-auto">
               <img
-                src="assets/Images/anas.jpg"
+                src="assets/Images/Anas Poster1.png"
                 alt="Anas Ahmed portrait"
-                class="img-fluid rounded-4 shadow-lg border border-3 border-accent"
+                class="img-fluid rounded-3 shadow-lg border border-3 border-accent"
               />
             </div>
           </div>
@@ -176,21 +183,43 @@
       <!-- Background Image (Data theme) -->
       <style>
         .hero {
-          background: url("assets/Images/Analysisjpg.jpg") center/cover
-            no-repeat;
-          min-height: 100vh;
+          position: relative;
+          background: url("assets/Images/Data.png") center/cover no-repeat;
+          min-height: 130vh;
         }
+
+        /* Overlay layer */
+        .hero::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.4);
+          z-index: 1;
+          inset: 0;
+        }
+
+        .hero-content {
+          position: relative;
+          z-index: 2;
+        }
+
         .text-accent {
           color: #00c4ff;
         }
+
         .btn-accent {
           background-color: #00c4ff;
           border: none;
           color: #fff;
         }
+
         .btn-accent:hover {
           background-color: #009ccf;
         }
+
         .border-accent {
           border-color: #00c4ff !important;
         }
@@ -1110,6 +1139,66 @@
                   target="_blank"
                   rel="noopener"
                   href="https://www.linkedin.com/feed/update/urn:li:activity:7403892252349173760/"
+                >
+                  Show Linkedin Post <i class="bi bi-box-arrow-up-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card project-card h-100 shadow-sm">
+              <div class="card-body d-flex flex-column">
+                <img
+                  src="./assets/Dashboards/HealthCare_Dashboard.png"
+                  alt="Project Image"
+                  class="img-fluid rounded mb-3"
+                  data-bs-toggle="modal"
+                  data-bs-target="#imageModal_Health"
+                  style="cursor: pointer"
+                />
+
+                <h5 class="card-title">Healthcare Analysis Dashboard</h5>
+                <p class="card-text small text-muted">
+                  Power BI , Power Query , Data Modeling , DAX Measures
+                </p>
+                <p class="card-text">
+                  Built a Power BI dashboard to analyze hospital visits, patient
+                  flow, costs, risk levels, and service performance. Prepared
+                  and cleaned data using Python, then delivered clear insights
+                  across departments, diagnoses, age groups, and insurance
+                  providers.
+                </p>
+                <a
+                  class="mt-auto btn btn-outline-accent showVideo mb-2"
+                  target="_blank"
+                  rel="noopener"
+                  href="https://drive.google.com/file/d/1Xvdj8QE61_gXyLjPCWPCp8ZKcjr4jKa4/view?usp=sharing"
+                >
+                  Show Video <i class="bi bi-box-arrow-up-right"></i>
+                </a>
+                <a
+                  class="mt-auto mb-2 btn btn-outline-accent showRepo"
+                  target="_blank"
+                  rel="noopener"
+                  href="https://github.com/Anas-Ahmed-Zakaria123/HealthCare_Data_Analysis.git"
+                >
+                  Github Repo <i class="bi bi-box-arrow-up-right"></i>
+                </a>
+                <a
+                  class="mt-auto btn btn-outline-accent showDashboard mb-2"
+                  target="_blank"
+                  rel="noopener"
+                  href="./assets/Dashboards/HealthCare Dashboard.pdf"
+                >
+                  Show Dashboard <i class="bi bi-box-arrow-up-right"></i>
+                </a>
+
+                <a
+                  class="mt-auto btn btn-outline-accent showLinked"
+                  target="_blank"
+                  rel="noopener"
+                  href="https://www.linkedin.com/feed/update/urn:li:activity:7427356033322381312/"
                 >
                   Show Linkedin Post <i class="bi bi-box-arrow-up-right"></i>
                 </a>
@@ -2527,6 +2616,32 @@
                 <div class="modal-body d-flex justify-content-center">
                   <img
                     src="./assets/Dashboards/Hotel_Dashboard.jpg"
+                    class="img-fluid rounded shadow"
+                    alt="Expanded Project Image"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bootstrap Model -->
+          <div
+            class="modal fade"
+            id="imageModal_Health"
+            tabindex="-1"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+              <div class="modal-content bg-transparent border-0 shadow-none">
+                <button
+                  type="button"
+                  class="btn-close btn-close-white ms-auto me-2 mt-2"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+                <div class="modal-body d-flex justify-content-center">
+                  <img
+                    src="./assets/Dashboards/HealthCare_Dashboard.png"
                     class="img-fluid rounded shadow"
                     alt="Expanded Project Image"
                   />

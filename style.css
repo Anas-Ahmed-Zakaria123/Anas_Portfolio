@@ -34,7 +34,8 @@ font-family: "Open Sans", sans-serif;
 }
 
 .hero-photo img{
-  max-height: 420px;
+  max-height: 400px;
+  width: 320px !important;
   object-fit: cover;
 }
 
